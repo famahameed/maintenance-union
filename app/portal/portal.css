@@ -1,0 +1,1009 @@
+.u-shell,
+.u-login,
+.u-directory,
+.u-loading {
+  font-family: Arial, Tahoma, sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+  color: #222831;
+  background: #f3f5f7;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+.u-shell *,
+.u-login *,
+.u-directory * {
+  box-sizing: border-box;
+}
+.u-shell button,
+.u-login button,
+.u-shell input,
+.u-shell select,
+.u-shell textarea,
+.u-login input {
+  font: inherit;
+}
+.u-shell a,
+.u-login a,
+.u-directory a {
+  color: inherit;
+  text-decoration: none;
+}
+.u-shell button,
+.u-login button {
+  border: 1px solid #cdd2d9;
+  background: white;
+  color: #222831;
+  border-radius: 9px;
+  padding: 9px 15px;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.u-shell button:disabled,
+.u-login button:disabled {
+  opacity: 0.5;
+  cursor: wait;
+}
+.u-shell input,
+.u-shell select,
+.u-shell textarea,
+.u-login input {
+  min-width: 0;
+  width: 100%;
+  padding: 11px 12px;
+  border: 1px solid #cdd2d9;
+  border-radius: 9px;
+  background: #fff;
+  color: #222831;
+  font-size: 16px;
+}
+.u-shell input:focus,
+.u-shell select:focus,
+.u-shell textarea:focus,
+.u-login input:focus {
+  outline: 2px solid #cc6a35;
+  outline-offset: 2px;
+}
+.u-shell .u-primary,
+.u-login .u-primary {
+  background: #ad491b;
+  border-color: #ad491b;
+  color: white;
+  font-weight: 700;
+}
+.u-shell .u-danger {
+  color: #a62727;
+  background: #fff6f5;
+  border-color: #f1c6c6;
+}
+.u-muted {
+  color: #606a77;
+  font-size: 14px;
+  line-height: 1.8;
+}
+.u-sensitive-actions {
+  margin-top: 28px;
+  padding: 18px;
+  border: 1px solid #e6d4ce;
+  border-radius: 12px;
+  background: #fffaf8;
+}
+.u-sensitive-actions h3 {
+  margin: 0 0 6px;
+  font-size: 17px;
+}
+.u-sensitive-actions p {
+  margin: 0 0 14px;
+}
+.u-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.u-grid2 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+.u-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.u-form label,
+.u-filters label,
+.u-booking-actions label {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.u-form small {
+  font-weight: 400;
+  font-size: 14px;
+  color: #606a77;
+}
+.u-form fieldset {
+  border: 1px solid #d8dde3;
+  border-radius: 12px;
+  padding: 16px;
+}
+.u-form legend {
+  padding: 0 8px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.u-form .u-check,
+.u-shell .u-check {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  font-weight: 400;
+}
+.u-check input {
+  width: 18px !important;
+  height: 18px;
+  accent-color: #ad491b;
+  flex-shrink: 0;
+}
+.u-days {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.u-days button[aria-pressed="true"] {
+  background: #222831;
+  border-color: #222831;
+  color: white;
+}
+.u-form h2 {
+  font-size: 28px;
+  margin: 0;
+}
+.u-form textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+.u-login {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.u-login-side {
+  background: #20262f;
+  color: white;
+  padding: 48px 9%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 50px;
+  min-height: 100vh;
+}
+.u-login-side .union-brand small {
+  color: #f2a477;
+}
+.u-login-side h1 {
+  font-size: clamp(32px, 4vw, 56px);
+  line-height: 1.55;
+  margin: 18px 0;
+}
+.u-login-side p {
+  color: #d4d8df;
+  max-width: 450px;
+}
+.u-login-side > div > span {
+  color: #f2a477;
+}
+.u-login-panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+.u-login-panel form {
+  width: 100%;
+  max-width: 410px;
+}
+.u-loading {
+  display: grid;
+  place-items: center;
+}
+.u-loading-panel {
+  width: min(360px, calc(100vw - 36px));
+  padding: 38px 22px;
+  border: 1px solid #e1e4e8;
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0 16px 45px #20262f10;
+  text-align: center;
+}
+.u-loading-panel .union-brand {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.u-busy-indicator {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-radius: 10px;
+  background: #fffaf3;
+  box-shadow: 0 2px 12px #20262f12;
+}
+.u-sidebar {
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 245px;
+  background: #20262f;
+  color: #f4f6f8;
+  padding: 28px 22px;
+  display: flex;
+  flex-direction: column;
+  z-index: 30;
+}
+.u-sidebar .union-brand {
+  padding: 8px 6px 30px;
+}
+.u-sidebar .union-brand small {
+  color: #d6a185;
+}
+.u-sidebar nav {
+  display: grid;
+  gap: 8px;
+}
+.u-sidebar nav button {
+  background: transparent;
+  border-color: transparent;
+  color: #c6ccd5;
+  text-align: right;
+  font-size: 16px;
+  padding: 13px 16px;
+}
+.u-sidebar nav button.active {
+  background: #ad491b;
+  color: white;
+}
+.u-user {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  padding-top: 24px;
+}
+.u-user small {
+  color: #bdc5d1;
+  font-size: 14px;
+}
+.u-user a {
+  font-size: 14px;
+  margin-top: 6px;
+}
+.u-user button {
+  background: #303844;
+  color: white;
+  border-color: #49515e;
+}
+.u-main {
+  margin-right: 245px;
+  padding: 28px 36px 50px;
+  max-width: 1760px;
+}
+.u-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 26px;
+}
+.u-top h1 {
+  font-size: 28px;
+  margin: 0;
+}
+.u-top span {
+  font-size: 14px;
+  color: #68717e;
+}
+.u-scope {
+  font-size: 14px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.u-scope select {
+  width: 220px;
+}
+.u-mobile {
+  display: none;
+}
+.u-message {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 14px 18px;
+  border: 1px solid #dfc7b8;
+  background: #fff7ee;
+  border-radius: 12px;
+  margin-bottom: 22px;
+  line-height: 1.8;
+}
+.u-message button {
+  border: 0;
+  background: transparent;
+  padding: 0 5px;
+}
+.u-room-banner {
+  background: white;
+  border: 1px solid #dce0e5;
+  border-radius: 14px;
+  padding: 18px 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 24px;
+}
+.u-room-banner > div {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.u-room-banner img {
+  width: 70px;
+  height: 50px;
+  object-fit: contain;
+}
+.u-room-banner p {
+  font-size: 14px;
+  margin: 3px 0;
+  color: #647080;
+}
+.u-room-banner strong {
+  font-size: 20px;
+}
+.u-room-banner > span {
+  font-size: 14px;
+  color: #805135;
+}
+.u-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+  margin-bottom: 24px;
+}
+.u-stats article {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background: white;
+  border: 1px solid #dce0e5;
+  border-radius: 14px;
+  padding: 22px;
+}
+.u-stats article:first-child {
+  background: #ad491b;
+  color: white;
+  border-color: #ad491b;
+}
+.u-stats span {
+  font-size: 14px;
+}
+.u-stats strong {
+  font-size: 38px;
+  line-height: 1.2;
+}
+.u-panel {
+  background: white;
+  border: 1px solid #dce0e5;
+  border-radius: 14px;
+  padding: 26px;
+  margin-bottom: 24px;
+}
+.u-panel h2 {
+  font-size: 21px;
+  margin: 0 0 18px;
+}
+.u-panel p {
+  line-height: 1.9;
+}
+.u-showrooms {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+.u-showrooms article {
+  border: 1px solid #dce0e5;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+.u-showrooms img {
+  width: 90px;
+  height: 60px;
+  object-fit: contain;
+}
+.u-showrooms h3 {
+  font-size: 20px;
+  margin: 5px 0;
+}
+.u-showrooms p,
+.u-showrooms span {
+  font-size: 14px;
+  margin: 0;
+}
+.u-showrooms button {
+  width: 100%;
+  margin-top: 5px;
+}
+.u-filters {
+  display: grid;
+  grid-template-columns: 1.5fr repeat(3, 1fr);
+  gap: 14px;
+  align-items: end;
+}
+.u-filters button {
+  height: 44px;
+}
+.u-bookings {
+  display: grid;
+  gap: 20px;
+}
+.u-booking {
+  background: white;
+  border: 1px solid #dce0e5;
+  border-radius: 14px;
+  overflow: hidden;
+  padding: 24px;
+}
+.u-booking header {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: start;
+}
+.u-showroom-tag {
+  font-size: 14px;
+  color: #a3431c;
+}
+.u-booking h3 {
+  font-size: 22px;
+  margin: 6px 0;
+}
+.u-booking header p {
+  margin: 0;
+  font-size: 14px;
+  color: #616d7d;
+}
+.u-status {
+  font-size: 14px;
+  padding: 7px 12px;
+  background: #eef0f4;
+  border-radius: 7px;
+  white-space: nowrap;
+}
+.u-status[data-status="completed"] {
+  background: #e3f3ed;
+  color: #176446;
+}
+.u-status[data-status="cancelled"] {
+  background: #fceaea;
+  color: #9b2525;
+}
+.u-status[data-status="in_progress"] {
+  background: #fff1d5;
+  color: #7f5107;
+}
+.u-status[data-status="pending_admin_approval"] {
+  background: #eaf0ff;
+  color: #344a80;
+}
+.u-booking-time {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+  border-top: 1px solid #edf0f4;
+  border-bottom: 1px solid #edf0f4;
+  padding: 15px 0;
+  margin: 18px 0;
+}
+.u-booking-time span {
+  font-size: 14px;
+  color: #636d7a;
+}
+.u-details {
+  margin: 0;
+  display: grid;
+  gap: 10px;
+}
+.u-details > div {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 12px;
+}
+.u-details dt {
+  font-size: 14px;
+  color: #647080;
+}
+.u-details dd {
+  margin: 0;
+  font-size: 16px;
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
+}
+.u-contact {
+  margin-top: 16px;
+}
+.u-contact a {
+  font-size: 14px;
+  color: #a1431d;
+  border-bottom: 1px solid #dfb69c;
+}
+.u-booking-actions {
+  display: flex;
+  align-items: end;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
+.u-booking-actions .u-form {
+  width: 100%;
+}
+.u-booking-actions label {
+  min-width: 210px;
+}
+.u-person {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 20px 0;
+  border-bottom: 1px solid #e3e6eb;
+}
+.u-person > span {
+  font-size: 14px;
+}
+.u-person button {
+  align-self: flex-start;
+}
+.u-person details {
+  font-size: 14px;
+}
+.u-person summary {
+  cursor: pointer;
+  padding: 6px 0;
+}
+.u-person details input {
+  flex: 1;
+  min-width: 130px;
+}
+.u-service {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 20px 0;
+  border-bottom: 1px solid #e3e6eb;
+}
+.u-service strong,
+.u-service small {
+  display: block;
+}
+.u-service small {
+  font-size: 14px;
+  color: #606a77;
+  margin-top: 6px;
+}
+.u-empty {
+  padding: 60px 24px;
+  text-align: center;
+  border: 1px dashed #bec6d0;
+  border-radius: 14px;
+  background: white;
+}
+.u-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 26px;
+  font-size: 14px;
+}
+.u-directory {
+  padding: 60px max(24px, 8vw);
+}
+.u-directory h1 {
+  font-size: 36px;
+  margin: 50px 0 8px;
+}
+.u-directory-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 36px;
+}
+.u-directory-grid > a {
+  padding: 28px;
+  border: 1px solid #d5dbe2;
+  background: white;
+  border-radius: 16px;
+}
+.u-directory-grid > a:hover {
+  border-color: #ad491b;
+}
+.u-directory-grid h2 {
+  font-size: 24px;
+  margin: 0 0 12px;
+}
+.u-directory-grid p {
+  color: #647080;
+}
+.u-directory-grid span {
+  color: #a1431d;
+  font-size: 14px;
+}
+@media (max-width: 1100px) {
+  .u-main {
+    padding: 24px;
+    margin-right: 220px;
+  }
+  .u-sidebar {
+    width: 220px;
+  }
+  .u-showrooms {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .u-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .u-filters {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .u-grid2 {
+    grid-template-columns: 1fr;
+  }
+  .u-top {
+    align-items: start;
+    flex-direction: column;
+  }
+}
+@media (max-width: 760px) {
+  .u-login {
+    grid-template-columns: 1fr;
+  }
+  .u-login-side {
+    min-height: auto;
+    padding: 30px;
+    gap: 25px;
+  }
+  .u-login-side > div {
+    display: none;
+  }
+  .u-login-panel {
+    padding: 35px 24px;
+  }
+  .u-sidebar {
+    display: none;
+    right: 0;
+    width: 260px;
+  }
+  .u-sidebar.is-open {
+    display: flex;
+  }
+  .u-main {
+    margin: 0;
+    padding: 20px 16px;
+  }
+  .u-mobile {
+    display: block;
+  }
+  .u-overlay {
+    position: fixed;
+    inset: 0;
+    background: #0008 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    z-index: 25;
+  }
+  .u-room-banner {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 16px;
+  }
+  .u-panel {
+    padding: 20px;
+  }
+  .u-stats {
+    gap: 12px;
+  }
+  .u-stats article {
+    padding: 18px 14px;
+  }
+  .u-booking {
+    padding: 18px;
+  }
+  .u-booking header {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .u-details > div {
+    grid-template-columns: 85px 1fr;
+  }
+  .u-filters {
+    grid-template-columns: 1fr;
+  }
+  .u-showrooms {
+    grid-template-columns: 1fr;
+  }
+  .u-scope {
+    flex-wrap: wrap;
+  }
+  .u-scope select {
+    width: 190px;
+  }
+  .u-directory {
+    padding: 30px 20px;
+  }
+  .u-directory-grid {
+    grid-template-columns: 1fr;
+  }
+  .u-directory h1 {
+    font-size: 30px;
+  }
+  .u-booking-actions label {
+    width: 100%;
+  }
+}
+
+.u-danger {
+  background: #b42318 !important;
+  color: white !important;
+  border-color: #b42318 !important;
+}
+.u-success {
+  background: #167044 !important;
+  color: white !important;
+  border-color: #167044 !important;
+}
+.u-logo-preview {
+  width: 128px;
+  height: 96px;
+  object-fit: contain;
+  border: 1px solid #d7dee7;
+  border-radius: 10px;
+  background: white;
+}
+.u-file-picker {
+  display: none;
+}
+.u-form-error {
+  color: #b42318;
+}
+.u-form .u-row input {
+  flex: 1;
+  min-width: 0;
+}
+
+.u-sidebar nav button {
+  transition:
+    background-color 180ms ease,
+    transform 180ms ease,
+    box-shadow 180ms ease;
+}
+@media (hover: hover) {
+  .u-sidebar nav button:hover {
+    background: #3a414b;
+    transform: translateX(-5px);
+    box-shadow: inset -3px 0 #ed9a61;
+  }
+  .u-sidebar nav button.active:hover {
+    background: #c55722;
+  }
+}
+.u-sidebar nav button:focus-visible {
+  outline: 2px solid #ed9a61;
+  outline-offset: 3px;
+  background: #3a414b;
+}
+.u-account-rooms {
+  display: grid;
+  gap: 16px;
+}
+.u-shell .u-account-room {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 22px;
+  text-align: start;
+  width: 100%;
+  border: 1px solid #d6dde5;
+  border-radius: 14px;
+  transition:
+    border-color 160ms ease,
+    box-shadow 160ms ease;
+}
+.u-account-room:hover,
+.u-account-room:focus-visible {
+  border-color: #ad491b;
+  box-shadow: 0 5px 18px #22283112;
+  outline: 2px solid transparent;
+}
+.u-account-room img {
+  width: 76px;
+  height: 64px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+.u-account-room-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex: 1;
+  overflow-wrap: anywhere;
+}
+.u-account-room-info strong {
+  font-size: 18px;
+}
+.u-account-room-info span {
+  font-size: 14px;
+  color: #606a77;
+}
+.u-account-room-open {
+  color: #ad491b;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.u-account-tabs {
+  display: flex;
+  gap: 12px;
+  margin: 20px 0;
+}
+.u-back-rooms {
+  margin-bottom: 4px;
+}
+.u-account-list {
+  display: grid;
+  gap: 16px;
+}
+.u-account-person {
+  border: 1px solid #d6dde5;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.u-account-person-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.u-account-person-info h3 {
+  margin: 0;
+  font-size: 17px;
+}
+.u-account-person-info span {
+  font-size: 14px;
+}
+.u-account-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.u-account-dialog {
+  border: 1px solid #d6dde5;
+  border-radius: 18px;
+  padding: 28px;
+  width: min(560px, calc(100% - 32px));
+  max-height: calc(100dvh - 40px);
+  color: #222831;
+  background: white;
+}
+.u-account-dialog::backdrop {
+  background: #10182499;
+}
+.u-account-dialog h2,
+.u-account-dialog p {
+  margin: 0;
+}
+.u-account-dialog .u-check input {
+  width: auto;
+  flex-shrink: 0;
+}
+.u-account-dialog .u-check {
+  align-items: flex-start;
+}
+.u-security-panel {
+  max-width: 760px;
+}
+.u-security-extra {
+  border-top: 1px solid #d6dde5;
+  margin-top: 24px;
+  padding-top: 20px;
+}
+.u-security-extra .u-form {
+  margin-top: 20px;
+}
+.u-panel summary {
+  cursor: pointer;
+  font-weight: 700;
+}
+@media (max-width: 600px) {
+  .u-shell .u-account-room {
+    gap: 12px;
+    padding: 16px;
+    flex-wrap: wrap;
+  }
+  .u-account-room img {
+    width: 54px;
+    height: 54px;
+  }
+  .u-account-room-open {
+    width: 100%;
+  }
+  .u-account-dialog {
+    padding: 20px;
+  }
+  .u-account-actions button {
+    flex: 1 1 44%;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .u-sidebar nav button,
+  .u-shell .u-account-room {
+    transition: none;
+  }
+  .u-sidebar nav button:hover {
+    transform: none;
+  }
+}
+/* One scoped showroom workspace, with keyboard and reduced-motion support. */
+.u-workspace-tabs {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 0 0 24px;
+}
+.u-workspace-tabs button.active {
+  background: #aa471c;
+  color: white;
+}
+.u-action-queues {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
+  gap: 12px;
+  margin: 20px 0;
+}
+.u-action-queues button {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 20px;
+  background: #faf7f3;
+}
+.u-action-queues strong {
+  font-size: 28px;
+  color: #aa471c;
+}
+.u-event-list {
+  max-height: 65vh;
+  overflow: auto;
+}
+.u-event-list time {
+  font-size: 12px;
+  color: #526071;
+}
+.u-shell :focus-visible,
+.u-login :focus-visible {
+  outline: 3px solid #d79051;
+  outline-offset: 3px;
+}
